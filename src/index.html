@@ -1,222 +1,248 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Trigger - Your Ultimate Game Store</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="styles/styles.css">
-  <!-- Add Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&family=Nunito&family=Palanquin+Dark:wght@500&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Kross Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
 </head>
+
 <body>
-  <div id="countdown-timer">
-    <p>Hurry, Limited Time Offer! Time Left to Buy <a href="#games">Kill the Justice League</a> for JUST $19.99<br> <span id="timer"></span></p>
-  </div>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand mx-auto" href="index.html">
-        <img src="assets/img/trigger-logo.png" alt="Trigger">
-        <!-- Trigger -->
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#games">Games</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
+    <nav id="nav">
+        <div class="navTop">
+            <div class="navItem">
+                <img src="./img/android-chrome-192x192-removebg-preview.png" alt="">
+            </div>
+            <div class="navItem">
+                <div class="search">
+                    <input type="text" placeholder="Search..." class="searchInput">
+                    <img src="./img/search.png" width="20" height="20" alt="" class="searchIcon">
+                </div>
+            </div>
+            <div class="navItem">
+                <a class="login" href="pages/login.html">Login</a>
+            </div>
+        </div>
+        <div class="navBottom">
+            <h3 class="menuItem">AIR FORCE</h3>
+            <h3 class="menuItem">JORDAN</h3>
+            <h3 class="menuItem">BLAZER</h3>
+            <h3 class="menuItem">CRATER</h3>
+            <h3 class="menuItem">HIPPIE</h3>
+        </div>
     </nav>
-  </header>
-  
-  <section id="hero">
-    <div class="hero-content">
-      <h1>Welcome to Trigger</h1>
-      <p>We carry all the latest and greatest titles, so you're sure to find what you're looking for. Plus, our prices are unbeatable. So why wait?</p>
-      <a href="#games" class="btn">Explore Games</a>
-    </div>
-  </section>
-  
-  <section id="about">
-    <div class="about-content">
-      <h2>About Trigger</h2>
-      <p>Trigger is an online game store dedicated to providing gamers with the latest and greatest games across all platforms. Whether you're a console gamer or a PC enthusiast, we've got you covered.</p>
-      <p>At Trigger, we believe in offering a diverse collection of games, including popular titles, indie gems, and classic favorites. Our mission is to create a vibrant gaming community and make gaming accessible to everyone.</p>
-    </div>
-  </section>
-  
-  <!-- Games Section -->
-  <section id="games">
-    <div class="container">
-      <div class="games-content">
-        <h2>Popular Games</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card">
-              <img src="assets/img/game1.png" class="card-img-top" alt="Game 1">
-              <div class="card-body">
-                <h5 class="card-title">Kill the Justice League</h5>
-                <p class="card-text">Shooter, Action-adventure</p>
-                <p class="card-text">Price: $19.99</p>
-                <a href="pages/purchase1.html" class="card-link">Buy Now</a>
-              </div>
+    <div class="slider">
+        <div class="sliderWrapper">
+            <div class="sliderItem">
+                <img src="./img/air.png" alt="" class="sliderImg" id="firsts">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">AIR FORCE</br> NEW</br> SEASON</h1>
+                <h2 class="sliderPrice">$ 1</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img src="assets/img/game2.png" class="card-img-top" alt="Game 2">
-              <div class="card-body">
-                <h5 class="card-title">The Day Before</h5>
-                <p class="card-text">Survival horror, open world</p>
-                <p class="card-text">Price: $24.99</p>
-                <a href="pages/purchase2.html" class="card-link">Buy Now</a>
-              </div>
+            <div class="sliderItem">
+                <img src="./img/jordan.png" alt="" class="sliderImg" id="jordan">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">AIR JORDAN</br> NEW</br> SEASON</h1>
+                <h2 class="sliderPrice">$ 2</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-bg-danger">Game of the Week</span>
-              <img src="assets/img/game3.png" class="card-img-top" alt="Game 3">
-              <div class="card-body">
-                <h5 class="card-title">Starfield</h5>
-                <p class="card-text">Shooter, Action/RPG, Action</p>
-                <p class="card-text">Price: $29.99</p>
-                <a href="pages/purchase3.html" class="card-link">Buy Now</a>
-              </div>
+            <div class="sliderItem">
+                <img src="./img/blazer.png" alt="" class="sliderImg" id="thirds">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">BLAZER</br> NEW</br> SEASON</h1>
+                <h2 class="sliderPrice">$ 3</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-bg-warning">Bestseller</span>
-              <img src="assets/img/game4.png" class="card-img-top" alt="Game 4">
-              <div class="card-body">
-                <h5 class="card-title">Marvel Snap</h5>
-                <p class="card-text">Strategy video game</p>
-                <p class="card-text">Price: $39.99</p>
-                <a href="pages/purchase4.html" class="card-link">Buy Now</a>
-              </div>
+            <div class="sliderItem">
+                <img src="./img/crater.png" alt="" class="sliderImg" id="crater">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">CRATER</br> NEW</br> SEASON</h1>
+                <h2 class="sliderPrice">$ 4</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img src="assets/img/game5.png" class="card-img-top" alt="Game 5">
-              <div class="card-body">
-                <h5 class="card-title">Horizon Forbidden West</h5>
-                <p class="card-text">An epic action RPG adventure.</p>
-                <p class="card-text">Price: $49.99</p>
-                <a href="pages/purchase5.html" class="card-link">Buy Now</a>
-              </div>
+            <div class="sliderItem">
+                <img src="./img/hippie.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">HIPPIE</br> NEW</br> SEASON</h1>
+                <h2 class="sliderPrice">$ 5</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img src="assets/img/game6.png" class="card-img-top" alt="Game 6">
-              <div class="card-body">
-                <h5 class="card-title">Street Fighter 6</h5>
-                <p class="card-text">Fighting, Adventure</p>
-                <p class="card-text">Price: $59.99</p>
-                <a href="pages/purchase6.html" class="card-link">Buy Now</a>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-  </section>
-  
-  <!-- Testimonials Section -->
-  <section id="testimonials">
-    <div class="container">
-      <h2>People Say About Us</h2>
-      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="testimonial">
-              <div class="testimonial-content">
-                <div class="user-info">
-                  <img src="assets/img/pro1.jpg" alt="User Profile Photo">
-                  <h4>@xzralken</h4>
-                </div>
-                <p class="testimonial-text">Great game selection and fantastic customer support. Trigger Game Store is my go-to place for all my gaming needs! #happygamer</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="testimonial">
-              <div class="testimonial-content">
-                <div class="user-info">
-                  <img src="assets/img/pro2.jpg" alt="User Profile Photo">
-                  <h4>@darkxeon</h4>
-                </div>
-                <p class="testimonial-text">I can't get enough of the immersive gaming experience provided by Trigger Game Store. It's like stepping into a whole new world with every game I play!</p>
-              </div>
-            </div>
-          </div>
+   
+    <div class="features">
+        <div class="feature">
+            <img src="./img/shipping.png" alt="" class="featureIcon">
+            <span class="featureTitle">FREE SHIPPING</span>
+            <span class="featureDesc">Free worldwide shipping on all orders.</span>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="false"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="false"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+        <div class="feature">
+            <img class="featureIcon" src="./img/return.png" alt="">
+            <span class="featureTitle">30 DAYS RETURN</span>
+            <span class="featureDesc">No question return and easy refund in 14 days.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="./img/gift.png" alt="">
+            <span class="featureTitle">GIFT CARDS</span>
+            <span class="featureDesc">Buy gift cards and use coupon codes easily.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="./img/contact.png" alt="">
+            <span class="featureTitle">CONTACT US!</span>
+            <span class="featureDesc">Keep in touch via email and support system.</span>
+        </div>
     </div>
-  </section>
 
-  <section id="contact">
-    <div class="container">
-      <div class="contact-content">
-        <h2>Contact Us</h2>
-        <p>Have any suggestions to improve our store? We'd love to hear from you!</p>
-        <div class="row">
-          <div class="col-md-6">
-            <form class="contact-form">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name" required id="name" name="name">
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" placeholder="Your Email" required id="email" name="email">
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" placeholder="Your Message" rows="5" required id="suggestion" name="suggestion"></textarea>
-              </div>
-              <button type="submit" class="btn" id="submitBtn" value="Submit">Submit</button>
-            </form>
-          </div>
-          <div class="col-md-6">
-            <div class="contact-info">
-              <h3>Our Location</h3>
-              <p>Mangilik El Street, 55/8, Astana, Kazakhstan</p>
-              <h3>Email</h3>
-              <p>contact@triggerstore.com</p>
-              <h3>Phone</h3>
-              <p>+7 234 567 890</p>
+    <div class="product" id="product">
+        <img src="./img/air.png" alt="" class="productImg">
+        <div class="productDetails">
+            <h1 class="productTitle">AIR FORCE</h1>
+            <h2 class="productPrice">$ 1</h2>
+            <p class="productDesc">Lorem ipsum dolor sit amet consectetur impal adipisicing elit. Alias assumenda
+                dolorum
+                doloremque sapiente aliquid aperiam.</p>
+            <div class="colors">
+                <div class="color"></div>
+                <div class="color"></div>
             </div>
-          </div>
+            <div class="sizes">
+                <div class="size">42</div>
+                <div class="size">43</div>
+                <div class="size">44</div>o
+            </div>
+            <button class="productButton">BUY NOW!</button>
         </div>
-      </div>
+        <div class="payment">
+            <h1 class="payTitle">Personal Information</h1>
+            <label>Name and Surname</label>
+            <input type="text" placeholder="John Doe" class="payInput">
+            <label>Phone Number</label>
+            <input type="text" placeholder="+1 234 5678" class="payInput">
+            <label>Address</label>
+            <input type="text" placeholder="Elton St 21 22-145" class="payInput">
+            <h1 class="payTitle">Card Information</h1>
+            <div class="cardIcons">
+                <img src="./img/visa.png" width="40" alt="" class="cardIcon">
+                <img src="./img/master.png" alt="" width="40" class="cardIcon">
+            </div>
+            <input type="password" class="payInput" placeholder="Card Number">
+            <div class="cardInfo">
+                <input type="text" placeholder="mm" class="payInput sm">
+                <input type="text" placeholder="yyyy" class="payInput sm">
+                <input type="text" placeholder="cvv" class="payInput sm">
+            </div>
+            <button class="payButton">Checkout!</button>
+            <span class="close">X</span>
+        </div>
     </div>
-  </section>
-  
-  <footer>
-    <p>&copy; 2023 Trigger. All rights reserved.</p>
-  </footer>
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
-  <!-- Include your custom JavaScript file -->
-  <script src="script/index.js"></script>
+    <div class="gallery">
+        <div class="galleryItem">
+            <h1 class="galleryTitle">Be Yourself!</h1>
+            <img src="https://images.pexels.com/photos/13159244/pexels-photo-13159244.jpeg"
+                alt="" class="galleryImg">
+        </div>
+        <div class="galleryItem">
+            <img src="https://images.pexels.com/photos/2982100/pexels-photo-2982100.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="" class="galleryImg">
+            <h1 class="galleryTitle">This is the First Day of Your New Life</h1>
+        </div>
+        <div class="galleryItem">
+            <h1 class="galleryTitle">Just Do it!</h1>
+            <img src="https://images.pexels.com/photos/1018911/pexels-photo-1018911.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="" class="galleryImg">
+        </div>
+    </div>
+    <div class="newSeason">
+        <div class="nsItem">
+            <img src="https://images.pexels.com/photos/34514/spot-runs-start-la.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="" class="nsImg">
+        </div>
+        <div class="nsItem">
+            <h3 class="nsTitleSm">WINTER NEW ARRIVALS</h3>
+            <h1 class="nsTitle">New Season</h1>
+            <h1 class="nsTitle">New Collection</h1>
+            <a href="#nav">
+                <button class="nsButton">CHOOSE YOUR STYLE</button>
+            </a>
+        </div>
+        <div class="nsItem">
+            <img src="https://images.pexels.com/photos/7856965/pexels-photo-7856965.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt="" class="nsImg">
+        </div>
+    </div>
+    <footer>
+        <div class="footerLeft">
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">About Us</h1>
+                <ul class="fList">
+                    <li class="fListItem">Company</li>
+                    <li class="fListItem">Contact</li>
+                    <li class="fListItem">Careers</li>
+                    <li class="fListItem">Affiliates</li>
+                    <li class="fListItem">Stores</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Useful Links</h1>
+                <ul class="fList">
+                    <li class="fListItem">Support</li>
+                    <li class="fListItem">Refund</li>
+                    <li class="fListItem">FAQ</li>
+                    <li class="fListItem">Feedback</li>
+                    <li class="fListItem">Stories</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Products</h1>
+                <ul class="fList">
+                    <li class="fListItem">Air Force</li>
+                    <li class="fListItem">Air Jordan</li>
+                    <li class="fListItem">Blazer</li>
+                    <li class="fListItem">Crater</li>
+                    <li class="fListItem">Hippie</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerRight">
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
+                <div class="fMail">
+                    <input type="text" placeholder="your@email.com" class="fInput">
+                    <button class="fButton">Join!</button>
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Follow Us</h1>
+                <div class="fIcons">
+                    <img src="./img/facebook.png" alt="" class="fIcon">
+                    <img src="./img/twitter.png" alt="" class="fIcon">
+                    <img src="./img/instagram.png" alt="" class="fIcon">
+                    <img src="./img/whatsapp.png" alt="" class="fIcon">
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <span class="copyright">@krossstore. All rights reserved. 2023.</span>
+            </div>
+        </div>
+    </footer>
+    <script src="script/app.js"></script>
 </body>
+
 </html>
