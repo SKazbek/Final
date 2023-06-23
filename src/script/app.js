@@ -136,3 +136,16 @@ productButton.addEventListener("click", () => {
 close.addEventListener("click", () => {
   payment.style.display = "none";
 });
+
+const button = document.getElementById('myButton');
+
+button.addEventListener('mouseover', function() {
+  button.style.backgroundColor = 'pink';
+  button.style.color = 'white';
+});
+
+button.addEventListener('mouseout', function() {
+  button.style.backgroundColor = 'white';
+  button.style.color = 'black';
+});
+
