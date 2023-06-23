@@ -149,3 +149,14 @@ button.addEventListener('mouseout', function() {
   button.style.color = 'black';
 });
 
+const audio = document.getElementById('myAudio');
+
+// Play the audio
+function playAudio() {
+  audio.play();
+}
+
+// Pause the audio
+function pauseAudio() {
+  audio.pause();
+}
