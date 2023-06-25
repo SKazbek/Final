@@ -149,8 +149,6 @@ button.addEventListener('mouseout', function() {
   button.style.color = 'black';
 });
 
-const audio = document.getElementById('myAudio');
-
 // Play the audio
 function playAudio() {
   audio.play();
@@ -160,3 +158,20 @@ function playAudio() {
 function pauseAudio() {
   audio.pause();
 }
+
+// Assuming you have an audio element with the id "myAudio"
+var audio = document.getElementById("myAudio");
+
+document.addEventListener('keydown', function(event) {
+  // Check if the spacebar key was pressed
+  if (event.code === 'Enter') {
+    // Pause or play the audio depending on its current state
+    if (audio.paused) {
+      audio.play();
+      console.log('Music resumed');
+    } else {
+      audio.pause();
+      console.log('Music paused');
+    }
+  }
+});
