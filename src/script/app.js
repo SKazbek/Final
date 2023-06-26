@@ -56,11 +56,6 @@ const products = [
         code: "black",
         img: "./img/crater.png",
       },
-      // {
-      //   code: "lightgray",
-      //   img: "./img/crater2.png",
-    
-      // },
     ],
   },
   {
